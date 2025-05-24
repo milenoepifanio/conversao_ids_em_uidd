@@ -7,3 +7,15 @@ Este script realiza o processamento de arquivos CSV, convertendo colunas especí
 - Converte colunas com IDs (`state_id`, `country_id`, `account_id`, `customer_id`, `id`) para UUIDs determinísticos.
 - Remove `.0` de strings numéricas e converte as colunas (`pix_requested_at`, `pix_completed_at`, `transaction_requested_at`, `transaction_completed_at`) para inteiros (`Int64`).
 - Salva os arquivos processados em uma nova pasta com o prefixo `uuid_`.
+
+
+## Requisitos
+
+- Python 3.7+
+- pandas
+
+Instale as dependências com:
+
+```bash
+pip install pandas
+```
